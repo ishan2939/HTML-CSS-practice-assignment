@@ -1,0 +1,428 @@
+*{
+    font-family: 'Roboto' , Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --bluee : #2874f0;
+}
+
+body{
+    background-color: rgb(237, 236, 236);
+}
+
+
+
+
+/*-------------------------------------------navigation bar--------------------------------------------------*/
+
+/* navigation bar */
+.navbar{
+    background-color: var(--bluee);
+    width: 100%;
+    padding: 5px 0px;
+}
+
+/* Content group */
+.grp{
+    width: 60%;
+    margin: 0 auto;
+    padding: 3px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-items: center;
+    justify-content: start;
+}
+
+/* flipkart logo group */
+.logo{  
+    display: inline-block;
+    width: 81px;
+    height: 40px;
+}
+
+/* flipkart image */
+.logo img{
+    width: 75px;
+    margin-bottom: 0;
+}
+
+/* Explore plus group */
+.logo div{
+    font-size: 12px;
+    font-style: italic;
+    color: #fff;
+    font-weight: 400;
+    width: 81px;
+}
+
+/* explore plus image */
+.logo div img{
+    width: 12px;
+    vertical-align: baseline;
+}
+
+/* search bar div */
+.search{
+    display: inline-block;
+    max-width: 550px;
+    margin: auto 20px;
+}
+
+/* search bar */
+.search input{
+    display: inline-block;
+    font-size: 13px;
+    height: 36px;
+    width: 500px;
+    padding: 0px 16px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-image: url('assests/search.png');
+    background-repeat: no-repeat;
+    background-position: 99%;
+}
+
+/* login button */
+.login button{
+    font-size: 15px;
+    padding: 5px 40px;
+    color: var(--bluee);
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    outline: none;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+/* more part */
+.more{
+    position: relative;
+}
+
+/* more and cart text */
+.more a, .cart a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px 1vw;
+    max-width: 150px;
+    height: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+/* arrow in more part */
+.more svg{
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
+/* rotate the arrow if someone hovers */
+.more:hover svg{
+    transform: rotate(90deg);
+}
+
+/* submenu of more */
+.more .submenu{
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    width: 200px;
+    background-color: #fff;
+    display: none;
+    z-index: 2;
+}
+
+/* show submenu if user hovers */
+.more:hover .submenu{
+    display: block;
+}
+
+.more .submenu ul{
+    list-style-type: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* arrow at the top of submenu */
+.more .submenu ul::before{
+    content: " ";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.more .submenu ul li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(223, 222, 222);
+    cursor: pointer;
+}
+
+.more .submenu ul li:hover{
+    background-color: #dbdbdb;
+    transition: .1s;
+}
+
+.more .submenu ul li:nth-last-child(1){
+    border-bottom: none;
+}
+
+
+
+
+
+
+/*--------------------------------------- Menu bar ---------------------------------------------*/
+/* menu bar */
+.menu{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(202, 200, 200);
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* menu items in menubar */
+.menuitem{
+    width: auto;
+    height: auto;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* change color when user hovers */
+.menuitem:hover{
+    color: var(--bluee);
+}
+
+/* menuitem images */
+.menuitem img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* menu div elements that stores the names of item */
+.menuitem div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    width: 100%;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* arrow in menuitems */
+.menu .menuitem div svg{
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
+/* rotate arrow if user hovers */
+.menuitem:hover div svg{
+    transform: rotate(90deg);    
+} 
+
+
+
+
+/*--------------------------------------deals of the day and music instruments part---------------------------------------*/
+
+/* entire container */
+.container1{
+    max-width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+/* products part */
+.container1 .productsbar{
+    display: inline-block;
+    background-color: #fff;
+    width: 75%;
+    position: relative;
+}
+
+/* upperbar of products bar */
+.container1 .productsbar .upperbar{
+    border-bottom: 1px solid rgb(194, 193, 193);
+    padding: 19px 20px;
+}
+
+/* title of product bar (deals of day, etc) */
+.container1 .productsbar .upperbar .title{
+    font-size: 21px;
+    font-weight:597;
+    letter-spacing: .03em;
+}
+
+/* Apply shadow when user hovers over title */
+.container1 .productsbar .upperbar .title:hover{
+    text-shadow: #000 0px 0 22px;
+}
+
+/* clock image */
+.container1 .productsbar .upperbar img{
+    vertical-align: bottom;
+    margin-left: 15px;
+    width: 25px;
+}
+
+/* text that shows time left */
+.container1 .productsbar .upperbar .timeleft{
+    font-size: 14px;
+    margin-left: 8px;
+    color: grey;
+}
+
+/* view all button */
+.container1 .productsbar .upperbar button{
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 11px 22px;
+    background-color: var(--bluee);
+    color: #fff;
+    font-weight: 800;
+    float: right;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+/* hover effect on view all button */
+.container1 .productsbar .upperbar button:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 2.4px 5px 5px;
+}
+
+/* item container in product bar */
+.container1 .productsbar .items{
+    overflow-x: hidden;
+    transition: 2s;
+}
+
+/* previous button to scroll to left */
+.container1 .productsbar .items .prev{
+    position: absolute;
+    left: 0px;
+    top: 40%;   
+    padding: 35px 15px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow:  2px 0px 40px -1px rgba(0,0,0,0.75);
+    /* box-shadow: rgb(0 0 0 / 20%) 0px -16px 17px, rgb(0 0 0 / 30%) 0px -12px 30px, rgb(0 0 0 / 50%) 0px 4px 6px, rgb(0 0 0 / 50%) 0px 12px 13px, rgb(0 0 0 / 50%) 0px -3px 5px; */
+}
+
+/* next button to scroll to right */
+.container1 .productsbar .items .next{
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    transform: rotate(180deg);
+    padding: 35px 15px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow:  2px 0px 40px -1px rgba(0,0,0,0.75);
+    /* box-shadow: rgb(0 0 0 / 20%) 0px -16px 17px, rgb(0 0 0 / 30%) 0px -12px 30px, rgb(0 0 0 / 50%) 0px 4px 6px, rgb(0 0 0 / 50%) 0px 12px 13px, rgb(0 0 0 / 50%) 0px -3px 5px; */
+}
+
+.container1 .productsbar .items ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+/* each item in container */
+.container1 .productsbar .items li{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image of item */
+.container1 .productsbar .items li .image{
+    width: 190px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* first line of description of item */
+.container1 .productsbar .items li .t1{
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+
+/* second line of description of item */
+.container1 .productsbar .items li .t2{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(33, 99, 33)
+}
+
+/* third line of description of item */
+.container1 .productsbar .items li .t3{
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: grey;
+}
+
+/* advertisement container */
+.container1 .advertisement{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* advertisement image */
+.container1 .advertisement img{
+    height: 332px;
+}
+
+/* hide the advertisement part when screen is smaller than 800px */
+@media  only screen and (max-width: 800px) {
+    .container1 .advertisement{
+        display: none;
+    }
+    .container1 .productsbar{
+        width: 100%;
+    }
+}

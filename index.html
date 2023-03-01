@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!----------------------------------------Navigation bar------------------------------------------->
+
+    <div class="navbar">
+        <div class="grp">
+            <div class="logo">
+                <img src="assests/flipkart-plus_8d85f4.png" alt="flipkart logo">
+                <div>Explore
+                    <span style="color: yellow">Plus</span>
+                    <img src="assests/plus_aef861.png" alt="plus logo">
+                </div>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search for products, brands and more">
+            </div>
+            <div class="login">
+                <button type="button">Login</button>
+            </div>
+            <div class="more">
+                <a href="#">More
+                    <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL">
+                        <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff"
+                            class="_2gTTdy"></path>
+                    </svg>
+                </a>
+                <div class="submenu">
+                    <ul>
+                        <li>Notification Preferences</li>
+                        <li>24X7 Customer Care</li>
+                        <li>Advertise</li>
+                        <li>Download App</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <svg class="V3C5bO" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path class="_1bS9ic"
+                            d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                            fill="#fff"></path>
+                    </svg>
+                    Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------Menu bar------------------------------------------------>
+
+    <div class="menu">
+        <ul>
+            <li class="menuitem">
+                <img src="assests/topoffers.webp" alt="Top offers">
+                <div>top offers</div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/grocery.webp" alt="Grocery">
+                <div>grocery</div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/mobiles.webp" alt="Mobiles">
+                <div>mobiles</div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/fashion.webp" alt="Fashion">
+                <div>fashion
+                    <svg width="5" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_2sVfI7"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000" class="_1zrN4q"></path></svg>
+                </div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/electronics.webp" alt="Electronics">
+                <div>electronics
+                    <svg width="5" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_2sVfI7"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000" class="_1zrN4q"></path></svg>
+                </div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/home.webp" alt="Home">
+                <div>home
+                    <svg width="5" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_2sVfI7"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000" class="_1zrN4q"></path></svg>
+                </div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/appliances.webp" alt="Appliances">
+                <div>appliances
+                    <svg width="5" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_2sVfI7"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000" class="_1zrN4q"></path></svg>
+                </div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/travel.webp" alt="Travel">
+                <div>travel</div>
+            </li>
+            <li class="menuitem">
+                <img src="assests/toys.webp" alt="Beauty, Toys & More">
+                <div>beauty, toys & more
+                    <svg width="5" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_2sVfI7"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000" class="_1zrN4q"></path></svg>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-------------------------------------Deals of the day part---------------------------------------->
+
+    <div class="container1">
+
+        <div class="productsbar">
+
+            <div class="upperbar">
+                <span class="title">Deals of the Day</span>
+                <img src="assests/clock.png" alt="clock">
+                <span class="timeleft"></span>
+                <button type="button">view all</button>
+            </div>
+
+            <div class="items">
+                <button type="button" class="prev">
+                    <svg width="14.6" height="27" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg"
+                        class="_2-wzdc">
+                        <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
+                            class="FXox6K"></path>
+                    </svg>
+                </button>
+                <button type="button" class="next">
+                    <svg width="14.6" height="27" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg"
+                        class="_2-wzdc">
+                        <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
+                            class="FXox6K"></path>
+                    </svg>
+                </button>
+                <ul>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/casio.png" alt="watch">
+                        </div>
+                        <div class="t1">
+                            Casio, Fastrack, Sonata...
+                        </div>
+                        <div class="t2">
+                            Upto 80%+Extra 10%Off
+                        </div>
+                        <div class="t3">
+                            Knockout Deals
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/tample.png" alt="watch">
+                        </div>
+                        <div class="t1">
+                            Home Temples & more
+                        </div>
+                        <div class="t2">
+                            Extra 10% Off
+                        </div>
+                        <div class="t3">
+                            Space Saving furniture
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/tabletcase.png" alt="tablets">
+                        </div>
+                        <div class="t1">
+                            Premium Tablet Cases
+                        </div>
+                        <div class="t2">
+                            Extra 10% Off
+                        </div>
+                        <div class="t3">
+                            For All Top Models
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/homedecor.png" alt="Homedecor">
+                        </div>
+                        <div class="t1">
+                            Best Of Home Decor
+                        </div>
+                        <div class="t2">
+                            From ₹79
+                        </div>
+                        <div class="t3">
+                            Lowest Price Ever
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/metronuat.png" alt="metronuat">
+                        </div>
+                        <div class="t1">
+                            Metronaut, Provogue & ...
+                        </div>
+                        <div class="t2">
+                            From₹249+Extra 10%Off
+                        </div>
+                        <div class="t3">
+                            Jackets, Dresses & More
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/lava.png" alt="lava phone">
+                        </div>
+                        <div class="t1">
+                            LAVA A1500
+                        </div>
+                        <div class="t2">
+                            Flat ₹830 off
+                        </div>
+                        <div class="t3">
+                            Now ₹999
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/lava.png" alt="lava phone">
+                        </div>
+                        <div class="t1">
+                            LAVA A1500
+                        </div>
+                        <div class="t2">
+                            Flat ₹830 off
+                        </div>
+                        <div class="t3">
+                            Now ₹999
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/casio.png" alt="watch">
+                        </div>
+                        <div class="t1">
+                            Casio, Fastrack, Sonata
+                        </div>
+                        <div class="t2">
+                            Upto 80%+Extra 10%Off
+                        </div>
+                        <div class="t3">
+                            Knockout Deals
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/tample.png" alt="watch">
+                        </div>
+                        <div class="t1">
+                            Home Temples & more
+                        </div>
+                        <div class="t2">
+                            Extra 10% Off
+                        </div>
+                        <div class="t3">
+                            Space Saving furniture
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/tabletcase.png" alt="tablets">
+                        </div>
+                        <div class="t1">
+                            Premium Tablet Cases
+                        </div>
+                        <div class="t2">
+                            Extra 10% Off
+                        </div>
+                        <div class="t3">
+                            For All Top Models
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/homedecor.png" alt="Homedecor">
+                        </div>
+                        <div class="t1">
+                            Best Of Home Decor
+                        </div>
+                        <div class="t2">
+                            From ₹79
+                        </div>
+                        <div class="t3">
+                            Lowest Price Ever
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/metronuat.png" alt="metronuat">
+                        </div>
+                        <div class="t1">
+                            Metronaut, Provogue & ...
+                        </div>
+                        <div class="t2">
+                            From₹249+Extra 10%Off
+                        </div>
+                        <div class="t3">
+                            Jackets, Dresses & More
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/lava.png" alt="lava phone">
+                        </div>
+                        <div class="t1">
+                            LAVA A1500
+                        </div>
+                        <div class="t2">
+                            Flat ₹830 off
+                        </div>
+                        <div class="t3">
+                            Now ₹999
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="advertisement">
+            <img src="assests/mrg-img.png" alt="advertisement">
+        </div>
+    </div>
+
+
+    <!-----------------------------Books and music instruments container-------------------------------->
+    <div class="container1">
+
+        <div class="productsbar" style="width: 87.5%;">
+
+            <div class="upperbar">
+                <button type="button">view all</button>
+                <span class="title">Books And music Instruments</span>
+                <div style="font-size: 12px;color: grey;margin-top: 5px;">Shop Now!</div>
+            </div>
+
+            <div class="items">
+                <ul>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/harmoniums.png" alt="harmonium">
+                        </div>
+                        <div class="t1">
+                            Harmoniums
+                        </div>
+                        <div class="t2">
+                            Up to 60% Off
+                        </div>
+                        <div class="t3">
+                            Shop Now!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/flutes.png" alt="harmonium">
+                        </div>
+                        <div class="t1">
+                            Flutes
+                        </div>
+                        <div class="t2">
+                            Up to 80% Off
+                        </div>
+                        <div class="t3">
+                            Shop Now!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/guitars.png" alt="guitar">
+                        </div>
+                        <div class="t1">
+                            Acoustic Guitars
+                        </div>
+                        <div class="t2">
+                            Strating ₹1799
+                        </div>
+                        <div class="t3">
+                            Juarez, Revel...
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/musical accessories.png" alt="musical accessories">
+                        </div>
+                        <div class="t1">
+                            Musical Accessories
+                        </div>
+                        <div class="t2">
+                            Up to 80% Off
+                        </div>
+                        <div class="t3">
+                            Shop Now!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/mircophone accessories.png" alt="mircophone accessories">
+                        </div>
+                        <div class="t1">
+                            Mircophone Accessories
+                        </div>
+                        <div class="t2">
+                            Up to 80% Off
+                        </div>
+                        <div class="t3">
+                            Shop Now!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img src="assests/card-images/guitars2.png" alt="guitar">
+                        </div>
+                        <div class="t1">
+                            Acoustic Guitars
+                        </div>
+                        <div class="t2">
+                            Strating ₹1999
+                        </div>
+                        <div class="t3">
+                            By Revel
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+
+        /*--------Change the fill property of svg in menu when someone hovers on menuitem------*/
+        var s;
+        var menuitem  = document.querySelectorAll('.menuitem').forEach((i)=>{
+            i.addEventListener('mouseover', function(){//if user hovers on element
+                s = i.querySelector('div svg');//select the svg
+                if(s!==null)//check if svg exists in menuitem or not
+                    s.querySelector("._1zrN4q").setAttribute("fill", "#2874f0");//change it's color                
+                
+            });
+
+            i.addEventListener('mouseout', function(){//when user hovers out
+                s = i.querySelector('div svg');
+                if(s!==null)
+                    s.querySelector("._1zrN4q").setAttribute("fill", "#000");//change it's color back to black                
+                
+            });
+        })
+
+
+
+
+        /*------------------------------clock counter------------------------------------*/
+        var Deadline = new Date('March 1 2023 23:59:59').getTime();//set the deadline
+
+        var myfunc = setInterval(function () {
+            var now = new Date().getTime();//get current time
+
+            var timeleft = Deadline - now;//get the time left for sale
+            var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+            if (timeleft < 0) {//if sale is already over give warning
+                clearInterval();
+                document.querySelector('.container1 .productsbar .upperbar .timeleft').textContent = 'Sale is already over';
+            }
+
+            else if( days > 0 )//if sale is days apart from over, then show days
+                document.querySelector('.container1 .productsbar .upperbar .timeleft').textContent = days + " Days " + format(hours) + "  :  " + format(minutes) + "  :  " + format(seconds) + " Hours Left";
+            
+            else // if the sale is ending today, then don't show days
+                document.querySelector('.container1 .productsbar .upperbar .timeleft').textContent = format(hours) + "  :  " + format(minutes) + "  :  " + format(seconds) + " Hours Left";                
+        }, 1000);
+
+        function format(x) { //function to convert single digit number to double digit by applying 0 as prefixex. 1 == 01
+            if (x <= 9 && x >= 0)
+                x = '0' + x;
+            return x;
+        }
+
+
+
+
+        /*-------------------------------------next button------------------------------------------*/
+        const buttonLeft = document.querySelector('.container1 .productsbar .items .prev');//left button
+        const buttonRight = document.querySelector('.container1 .productsbar .items .next');//right button
+        var x = document.querySelectorAll('.container1')[0].querySelectorAll('.productsbar .items ul li');//select all the items in container 
+        var l = x.length;//to get total number of element in container
+        var p = 0;
+
+        hideLeft();//hide the left button in start
+
+        buttonLeft.onclick = function () {//if user clicks left button scroll the bar to left by 190px
+
+            p += 190;
+            x.forEach((x) => {
+                x.style.transition = '2s';
+                x.style.transform = `translateX(${p}px)`;
+            });
+            hideLeft();//handle the left button if necessary
+            hideRight();//handle the right button if necessary
+        };
+
+        buttonRight.onclick = function () {//if user clicks right button scroll the bar to right by 190px
+
+            p -= 190;
+            x.forEach((x) => {
+                x.style.transition = '2s';
+                x.style.transform = `translateX(${p}px)`;
+            });
+            hideLeft();//handle the left button if necessary
+            hideRight();//handle the right button if necessary
+        };
+
+        function hideLeft(){//function to handle left button
+            if (p == 0) {
+                buttonLeft.style.display = 'none';
+            }
+            else {
+                buttonLeft.style.display = 'block';
+            }
+        }
+
+        function hideRight(){//function to handle right button
+
+            //we need to stop user from scrolling when user reaches last 7 elements and that's why we calculate total elements-7 and each element has 190 width
+            //we then multiply them to get the width of all element except last 7.
+            
+            //that means when user passes through all the elements means p's value is equal to all elements except 7's length we should disable the next button
+            
+            //we should use different value (according to length of that item container) rather than 7 when we make it responsive, here 7 is amount of items container
+            //can display at a perticular time
+            if (p <= -((l - 7) * 190)) {
+                buttonRight.style.display = 'none';
+            }
+            else {
+                buttonRight.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
